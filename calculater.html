@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .formstyle {
+            border: 2px solid black;
+            max-width: 24%;
+            background-color: hwb(75 29% 69%);
+            height: 100%;
+            font-size: 40px;
+            margin: 0px;
+            padding: 10px 0px;
+            display: flex;
+            text-align: center;
+            padding: 20px;
+            flex-direction: column;
+            margin: auto;
+            margin-top: 100px;
+            cursor: pointer;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="formstyle">
+        <form action="form">
+
+            <input id="finalanswer" name="answer" type="text" style="width:80%;height:50px;background-color:white ;">
+            <br>
+
+            <input onclick="form.answer.value+='1'" type="button" value="1"
+                style="margin: 2px;width:50px;height:50px;box-shadow:2px;">
+            <input onclick="form.answer.value+='2'" type="button" value="2" style="margin: 2px;width:50px;height:50px;">
+            <input onclick="form.answer.value+='3'" type="button" value="3" style="margin: 2px;width:50px;height:50px;">
+            <br>
+            <input onclick="form.answer.value+='4'" type="button" value="4" style="margin: 2px;width:50px;height:50px;">
+            <input onclick="form.answer.value+='5'" type="button" value="5" style="margin: 2px;width:50px;height:50px;">
+            <input onclick="form.answer.value+='6'" type="button" value="6" style="margin: 2px;width:50px;height:50px;">
+            <br>
+            <input onclick="form.answer.value+='7'" type="button" value="7" style="margin: 2px;width:50px;height:50px;">
+            <input onclick="form.answer.value+='8'" type="button" value="8" style="margin: 2px;width:50px;height:50px;">
+            <input onclick="form.answer.value+='9'" type="button" value="9" style="margin: 2px;width:50px;height:50px;">
+            <br>
+            <input onclick="form.answer.value+='+'" type="button" value="+" style="margin: 2px;width:50px;height:50px;">
+            <input onclick="form.answer.value+='-'" type="button" value="-" style="margin: 2px;width:50px;height:50px;">
+            <input onclick="form.answer.value+='/'" type="button" value="/" style="margin: 2px;width:50px;height:50px;">
+            <br>
+            <input onclick="form.answer.value+='0'" type="button" value="0" style="margin: 2px;width:50px;height:50px;">
+            <input onclick="form.answer.value+='*'" type="button" value="*" style="margin: 2px;width:50px;height:50px;">
+            <input onclick="form.answer.value=eval(form.answer.value)" type="button" value="="
+                style="margin: 2px;width:50px;height:50px;">
+            <br>
+            <input id="clearbutton" onclick="form.answer.value=''" type="button" value="clear All"
+                style="height:45%;width:45%;background-color: white;">
+        </form>
+    </div>
+
+</body>
+
+</html>

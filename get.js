@@ -3,9 +3,9 @@
 
 //let data=document.getElementById("a").innerHTML;
 
-let data=document.getElementById("a").getAttribute("style")
+//let data=document.getElementById("a").getAttribute("style")
 
-//let data=document.getElementById("a").getAttributeNode("style")
+let data=document.getElementById("a").getAttributeNode("style")
 
 //let data=document.getElementById("a").attributes[0]
 
